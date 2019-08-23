@@ -2,17 +2,29 @@
 /* CSS Document */
 
 body{
-font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+font: 16px/1.6 "Yu Gothic";
 margin:0;
 color:#313131;
+}
+
+
+
+
+header{
+    background-color: #3F51B5;
+    position: fixed;
+    width: 100%;
+
 }
 nav li.nav_logo {
     margin-right: auto;
 }
 
 nav {
-	background-color: #3F51B5;
     color: white;
+    width: 80%;
+    margin: 0 auto;
+
 }
 nav ul {
 	display: flex;
@@ -21,9 +33,11 @@ nav ul {
     padding: 6px;
     list-style-type: none;
     align-items:center;
+    position: relative;
 }
 
 nav li{
+
     padding: 15px;
 
 }
@@ -53,18 +67,26 @@ nav a:not(.nav_logo):hover::after {
     visibility: visible;
 }
 
-section{
+.contents{
     width: 100vw;
     height: 100vh;
-    min-height: 100vh;
+    min-height: 70vh;
     background-image: url("image/mv-1200x801.jpg");
     background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 90px;
 }
 
-.main_contents_transparent{
+
+
+
+
+
+.contents_transparent{
     width: 100vw;
     height: 100vh;
     min-height: 100vh;
@@ -75,13 +97,13 @@ section{
 }
 
 
-.main_contents h2{
+.contents h2{
     font-size:68px;
     font-weight: bold;
     text-align: center;
 }
 
-.main_contents p{
+.contents p{
     font-size: 38px;
     font-weight: bold;
     text-align: center;
@@ -115,7 +137,66 @@ section{
     box-shadow:0px 3px 6px #000000;
 }
 
+.cards{
+    background: #EFEFEF;
+}
+
+.card_box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 137px;
+}
+
+.card{
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #6F7579;
+    padding: 20px 20px 22px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    margin: 0 30px 30px 0;
+    width: calc(33.33333333% - 30px);
+    max-width:342px;
+    max-height: 355px;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card:nth-child(3n) {
+    margin-right:auto;
+}
+.card:nth-child(3n-2) {
+    margin-left:auto;
+}
+
+.cards h2{
+    font-size:60px;
+    font-weight: bold;
+    text-align: center;
+    color: #6F7579;
+    padding: 70px 0 140px 0 ;
+}
+.cards h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -300px; /*下線の上下位置調整*/
+    display: inline-block;
+    width: 50px; /*下線の幅*/
+    height: 5px; /*下線の太さ*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%); /*位置調整*/
+    background-color:#3F51B5; /*下線の色*/
+}
 
 
-
-
+.cards h3{
+    font-size:20px;
+    color: #6F7579;
+    padding: 20px 0;
+}
