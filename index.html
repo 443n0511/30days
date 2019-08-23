@@ -5,26 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <a href="#"><img src="image/logo.png" alt="ロゴ画像"></a>
-        <ul>
-            <li>Card</li>
-            <li>News</li>
-            <li>Price</li>
-            <li>Accese</li>
-            <li>Contact</li>
-        </ul>
+        <nav>
+            <ul>
+                <li class="nav_logo">
+                    <h1><a class="nav_logo"  href="#"><img src="image/logo.png" alt="ロゴ画像"></a></h1>
+                </li>
+                <li><a href="#">Card</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Accese</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h1>一番伝えたいことを書く</h1>
-            <p>リードリードリード</p>
-            <a href="#">お問い合わせ</a>
+        <section class="main_contents">
+            <div class="main_contents_transparent">
+                <div class="main_contents_wrapper">
+                    <h2>一番伝えたいことを書く</h2>
+                    <p>リードリードリード</p>
+                    <div class="btn"> <a href="#">お問い合わせ</a></div>
+                </div>
+            </div>
         </section>
     </main>
 </body>
