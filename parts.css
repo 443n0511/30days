@@ -2,24 +2,47 @@
 /* CSS Document */
 
 body {
-	font: 16px/1.6 "Yu Gothic";
-
 	width: 100%;
 	margin: 0;
-
-	color: #313131;
 }
 
 .inner {
-	max-width: 750px;
+	max-width: 650px;
 	margin: 30px auto;
-
-	background-color: #ff9;
 }
 
 h2 {
-	font-size: 24px;
-	font-weight: bold;
+	font: Bold 24px/39px Yu Gothic;
 
 	margin-bottom: 40px;
+	padding: 10px;
+
+	text-align: left;
+	letter-spacing: 0;
+
+	opacity: 1;
+	color: #333;
+}
+
+.heading01 {
+	border-bottom: solid 3px #3f51b5;
+}
+
+.heading02 {
+	border-bottom: dotted 3px #3f51b5;
+}
+.heading03 {
+	opacity: 1;
+	color: #fff;
+	background: #3f51b5 0% 0% no-repeat padding-box;
+}
+.heading04 {
+	opacity: 1;
+	color: #fff;
+	border-bottom: solid 3px #3f51b5;
+	background: #7385e9 0% 0% no-repeat padding-box;
+}
+
+.heading05 {
+	border-left: solid 5px #3f51b5;
 }
