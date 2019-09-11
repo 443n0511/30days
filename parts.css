@@ -138,3 +138,204 @@ h2 {
 
 	background: #3f51b5;
 }
+
+
+
+.wrap {
+	margin-bottom: 40px;
+
+	text-align: center;
+}
+
+
+.heading11 {
+	position: relative;
+
+	display: inline-block;
+
+	margin-bottom: 0 auto 1em auto;
+}
+
+.heading11:after {
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+
+	display: inline-block;
+
+	width: 52px;
+	height: 4px;
+
+	content: "";
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+
+	background-color: #3f51b5;
+}
+
+.heading12 {
+	position: relative;
+
+	margin-bottom: 40px;
+	padding-left: 1.2em;/*アイコン分のスペース*/
+}
+
+.heading12:before {
+	font-size: 1em;/*サイズ*/
+
+	position: absolute;/*絶対位置*/
+	top: 0;/*アイコンの位置*/
+	left: 0;/*アイコンの位置*/
+
+	content: url(image/check.png);/*アイコンのユニコード*/
+}
+
+.heading13 {
+	position: relative;
+
+	margin: 40px 0;
+}
+
+.heading13:after {
+	position: relative;
+	left: 7px;
+
+	content: url(image/glass.png);/*アイコンのユニコード*/
+}
+
+
+.heading14 {
+	position: relative;
+	left: 50%;
+
+	display: inline-block;
+
+	padding: 0 40px;
+
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.heading14:before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+
+	display: inline-block;
+
+	width: 31px;
+	height: 3px;
+
+	content: "";
+	-webkit-transform: rotate(70deg);
+	        transform: rotate(70deg);
+
+	background-color: #3f51b5;
+}
+
+.heading14:after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+
+	display: inline-block;
+
+	width: 31px;
+	height: 3px;
+
+	content: "";
+	-webkit-transform: rotate(-70deg);
+	        transform: rotate(-70deg);
+
+	background-color: #3f51b5;
+}
+
+
+.heading15 {
+	position: relative;
+	left: 50%;
+
+	display: inline-block;
+
+	padding: 0 40px;
+
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.heading15:before {
+	position: absolute;
+	top: 50%;
+	left: -27%;
+
+	display: inline-block;
+
+	width: 130px;
+	height: 3px;
+
+	content: "";
+
+	background-color: #3f51b5;
+}
+
+.heading15:after {
+	position: absolute;
+	top: 50%;
+	right: -27%;
+
+	display: inline-block;
+
+	width: 130px;
+	height: 3px;
+
+	content: "";
+
+	background-color: #3f51b5;
+}
+
+.heading16 {
+	position: relative;
+	left: 50%;
+
+	display: inline-block;
+
+	box-sizing: border-box;
+	width: 320px;
+	margin-bottom: 40px;
+	padding: 5px 10px;
+
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	text-align: center;
+
+	background: -webkit-repeating-linear-gradient(-45deg, #7385e9, #7385e9 10px,#3f51b5 10px, #3f51b5 20px);
+	background:         repeating-linear-gradient(-45deg, #7385e9, #7385e9 10px,#3f51b5 10px, #3f51b5 20px);
+}
+
+.heading17 {
+	position: relative;
+	left: 50%;
+
+	display: inline-block;
+
+	padding: 0 40px;
+
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.heading17:before {
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+
+	width: 320px;
+	height: 20px;
+
+	content: "";
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+
+	background: repeating-linear-gradient(-45deg, #7385e9, #7385e9 10px,#3f51b5 10px, #3f51b5 20px);
+}
