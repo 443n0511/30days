@@ -337,5 +337,5 @@ h2 {
 	-webkit-transform: translateX(-50%);
 	        transform: translateX(-50%);
 
-	background: repeating-linear-gradient(-45deg, #7385e9, #7385e9 10px,#3f51b5 10px, #3f51b5 20px);
+	background: repeating-linear-gradient(-45deg, #7385e9 0, #7385e9 10px,#3f51b5 10px, #3f51b5 20px);
 }

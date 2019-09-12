@@ -1,2 +1,82 @@
 @charset "utf-8";
 /* CSS Document */
+body {
+	font-family: YuGothic, "游ゴシック Medium", "游ゴシック体";
+	font-weight: bold;
+
+	width: 100%;
+	margin: 0;
+}
+
+a {
+	font-size: 16px;
+
+	display: block;
+
+	box-sizing: border-box;
+	width: 230px;
+	height: 50px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+
+	text-decoration: none;
+
+	color: #fff;
+	background-color: #3f51b5;
+}
+.button1 a, .button2 a, .button3 a, .button10 a {
+	padding: 15px 0 0 15px;
+}
+.button4 a, .button5 a, .button6 a, .button9 a {
+	padding: 15px 0 0 35px;
+}
+.button7 a {
+	padding: 38px 0 0 30px;
+
+	border-radius: 50%;
+}
+.button1 a, .button2 a, .button3 a, .button4 a, .button5 a, .button9 a {
+	border-radius: 3px;
+}
+
+
+a:link, a:valid, a:hover, a:active {
+	color: #fff;
+}
+
+
+.button1 a {
+	margin-top: 100px;
+}
+.button5 a {
+	margin-bottom: 10px;
+}
+.button6 {
+	width: 100%;
+	height: 104px;
+	margin-bottom: 30px;
+
+	border: 1px solid　#707070;
+	background-color: #333;
+}
+.button6 a {
+	position: relative;
+	top: 50%;
+
+	width: 230px;
+	height: 50px;
+
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+
+	color: #fff;
+	border: 2px solid #fff;
+	background-color: #333;
+}
+.button7 a {
+	width: 123px;
+	height: 123px;
+
+	color: #fff;
+	background-color: #3f51b5;
+}
