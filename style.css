@@ -228,7 +228,7 @@ nav a:not(.nav_logo):hover::after {
 
 	text-align: center;
 
-	color: #6f7579;
+	color: #333;
 }
 .title h2::after {
 	position: absolute;
@@ -257,25 +257,165 @@ nav a:not(.nav_logo):hover::after {
 
 	color: #6f7579;
 }
+/*------------------------------*/
+/*▼.list_news_index */
+/*------------------------------*/
+.topics-list {
+	line-height: 1.7;
 
-.topics dl {
-	padding: 4px 0 21.5px 7.5px;
+	padding-left: 0;
 
-	border-bottom: 1px solid #ccc;
+	list-style: none;
+}
+.txt a:link, .txt a:visited {
+	color: #343434;
+}
+.txt a:hover {
+	text-decoration: none;
+}
+.topics-list > li a:hover .date time {
+	text-decoration: none;
 }
 
-.topics dt {
-	padding-bottom: 5px;
-}
 
+
+@media screen and (max-width: 767px) {
+	.topics-list > li {
+		display: block;
+
+		padding-top: 22.5px;
+		padding-bottom: 21.5px;
+
+		border-bottom: 1px solid #dedede;
+	}
+
+	.date {
+		display: inline-block;
+
+		width: 100px;
+		margin-right: 1em;
+		margin-right: 0;
+		padding-right: 0;
+	}
+
+	.txt {
+		margin-top: 10px;
+	}
+}
 @media screen and (min-width: 768px) {
-	.topics dt {
-		float: left;
-		clear: left;
+	.topics-list > li {
+		display: block;
 
-		width: 10%;
+		padding-top: 22.5px;
+		padding-bottom: 21.5px;
+
+		border-bottom: 1px solid #dedede;
 	}
-	.topics dd {
-		margin-left: 11%;
+	.date {
+		font-size: 13px;
+
+		width: 130px;
+		margin-right: 0;
+		padding-right: 0;
 	}
+
+	.txt {
+		width: auto;
+		margin-top: 10px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.topics-list > li {
+		padding-top: 22.5px;
+		padding-bottom: 21.5px;
+
+		border-bottom: 1px solid #dedede;
+	}
+	.topics-list > li {
+		display: flex;
+	}
+	.date {
+		width: 150px;
+
+		white-space: nowrap;
+	}
+
+	.txt {
+		width: 100%;
+		margin-top: 0;
+	}
+	.label {
+		margin-right: 30px;
+	}
+}
+
+
+.label {
+	font-weight: bold;
+
+	display: inline-block;
+
+	width: 100px;
+	min-width: 100px;
+	height: 30px;
+	min-height: 30px;
+	padding-top: 4.42px;
+
+	text-align: center;
+
+	color: #fff;
+	border-radius: 6px;
+}
+
+.label1 {
+	background-color: #666;
+}
+.label2 {
+	background-color: #3f51b5;
+}
+.label3 {
+	background-color: #e81919;
+}
+/*------------------------------*/
+/*▼.more */
+/*------------------------------*/
+.topics {
+	position: relative;
+}
+
+.topics a {
+	text-decoration: none;
+
+	color: #fff;
+}
+.label a:link, .label a:valid, .label a:hover, .label a:active {
+	color: #fff;
+}
+
+
+.more {
+	position: absolute;
+	left: 50%;
+
+	margin: 16px auto 30px;
+
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+.more a {
+	color: #e81919;
+}
+
+.more a:after {
+	display: inline-block;
+
+	width: 6px;
+	height: 10px;
+	margin: 0 0 0 6.5px;
+
+	content: "";
+	vertical-align: middle;
+
+	background: url("image/news-arrow@2x.png") no-repeat;
+	background-size: contain;
 }
