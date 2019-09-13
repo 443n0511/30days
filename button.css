@@ -24,33 +24,66 @@ a {
 	color: #fff;
 	background-color: #3f51b5;
 }
+
+a:link, a:valid, a:hover, a:active {
+	color: #fff;
+}
+
 .button1 a, .button2 a, .button3 a, .button10 a {
 	padding: 15px 0 0 15px;
 }
 .button4 a, .button5 a, .button6 a, .button9 a {
 	padding: 15px 0 0 35px;
 }
-.button7 a {
-	padding: 38px 0 0 30px;
-
-	border-radius: 50%;
-}
-.button1 a, .button2 a, .button3 a, .button4 a, .button5 a, .button9 a {
+.button1 a, .button2 a, .button3 a, .button4 a, .button5 a {
 	border-radius: 3px;
 }
 
 
-a:link, a:valid, a:hover, a:active {
-	color: #fff;
-}
 
 
 .button1 a {
 	margin-top: 100px;
 }
+
+.button2 a:after {
+	display: inline-block;
+
+	width: 14px;
+	height: 14px;
+	margin: 0 0 0 66px;
+
+	content: "";
+	vertical-align: middle;
+
+	background: url("image/arrow.png") no-repeat;
+	background-size: contain;
+}
+
+.button3 a:after {
+	display: inline-block;
+
+	width: 14px;
+	height: 14px;
+	margin: 0 0 0 6px;
+
+	content: "";
+	vertical-align: middle;
+
+	background: url("image/arrow.png") no-repeat;
+	background-size: contain;
+}
+
+.button4 a {
+	box-shadow: 0px 5px 0px #25379b;
+}
+
 .button5 a {
 	margin-bottom: 10px;
+
+	background: transparent linear-gradient(180deg, #3f51b5 0%, #20295b 100%)no-repeat;
 }
+
 .button6 {
 	width: 100%;
 	height: 104px;
@@ -59,6 +92,7 @@ a:link, a:valid, a:hover, a:active {
 	border: 1px solid　#707070;
 	background-color: #333;
 }
+
 .button6 a {
 	position: relative;
 	top: 50%;
@@ -73,10 +107,41 @@ a:link, a:valid, a:hover, a:active {
 	border: 2px solid #fff;
 	background-color: #333;
 }
+
 .button7 a {
+	line-height: 25px;
+
+	display: block;
+	overflow: hidden;
+
 	width: 123px;
 	height: 123px;
+	padding-top: 38px;
+
+	text-align: center;
 
 	color: #fff;
+	border-radius: 50%;
 	background-color: #3f51b5;
+}
+
+.button9 a {
+	box-shadow: 0px 5px 0px #25379b;
+}
+.button10 a {
+	border-radius: 115px;
+}
+
+.button10 a:after {
+	display: inline-block;
+
+	width: 14px;
+	height: 14px;
+	margin: 0 0 0 57px;
+
+	content: "";
+	vertical-align: middle;
+
+	background: url("image/arrow.png") no-repeat;
+	background-size: contain;
 }

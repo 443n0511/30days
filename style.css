@@ -4,7 +4,7 @@
 /* CSS Document */
 
 body {
-	font: 16px/1.6 "Yu Gothic";
+	font: 16px/1.6  YuGothic, "游ゴシック Medium", "游ゴシック体";
 
 	margin: 0;
 
@@ -217,12 +217,12 @@ nav a:not(.nav_logo):hover::after {
 	height: auto;
 }
 
-.card-title {
+.title {
 	position: relative;
 
 	padding: 70px 0 140px 0 ;
 }
-.cards h2 {
+.title h2 {
 	font-size: 60px;
 	font-weight: bold;
 
@@ -230,7 +230,7 @@ nav a:not(.nav_logo):hover::after {
 
 	color: #6f7579;
 }
-.cards h2::after {
+.title h2::after {
 	position: absolute;
 	bottom: 100px; /*下線の上下位置調整*/
 	left: 50%;
@@ -256,4 +256,26 @@ nav a:not(.nav_logo):hover::after {
 	padding: 20px 0;
 
 	color: #6f7579;
+}
+
+.topics dl {
+	padding: 4px 0 21.5px 7.5px;
+
+	border-bottom: 1px solid #ccc;
+}
+
+.topics dt {
+	padding-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+	.topics dt {
+		float: left;
+		clear: left;
+
+		width: 10%;
+	}
+	.topics dd {
+		margin-left: 11%;
+	}
 }
