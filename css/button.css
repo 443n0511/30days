@@ -18,6 +18,7 @@ a {
 	height: 50px;
 	margin: 0 auto;
 	margin-bottom: 30px;
+	padding: 16px 60px;
 
 	text-decoration: none;
 
@@ -56,7 +57,7 @@ a:link, a:valid, a:hover, a:active {
 	content: "";
 	vertical-align: middle;
 
-	background: url("image/arrow.png") no-repeat;
+	background: url("/image/arrow.png") no-repeat;
 	background-size: contain;
 }
 
@@ -70,7 +71,7 @@ a:link, a:valid, a:hover, a:active {
 	content: "";
 	vertical-align: middle;
 
-	background: url("image/arrow.png") no-repeat;
+	background: url("/image/arrow.png") no-repeat;
 	background-size: contain;
 }
 
@@ -135,13 +136,13 @@ a:link, a:valid, a:hover, a:active {
 .button10 a:after {
 	display: inline-block;
 
-	width: 14px;
+	width: 20px;
 	height: 14px;
 	margin: 0 0 0 57px;
 
 	content: "";
 	vertical-align: middle;
 
-	background: url("image/arrow.png") no-repeat;
+	background: url("/image/arrow.png") no-repeat;
 	background-size: contain;
 }
