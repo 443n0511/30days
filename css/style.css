@@ -786,3 +786,142 @@ select {
 	background: url("/image/contact-arrow@2x.png") no-repeat;
 	background-size: contain;;
 }
+
+
+footer {
+	position: relative;
+
+	background: linear-gradient(#666, #333);
+}
+
+footer > .inner {
+	padding-top: 83px;
+	padding-bottom: 31px;
+}
+
+.footer-menu {
+	display: flex;
+
+	margin-bottom: 90px;
+}
+
+.footer-logo {
+	width: 30%;
+}
+
+.footer-logo-img {
+	margin-bottom: 30px;
+}
+
+.footer-logo-img a:hover {
+	opacity: .6;
+}
+
+.footer-logo-img img {
+	width: 200px;
+}
+
+.footer-info {
+	margin-top: 13px;
+}
+
+.footer-info dt {
+	display: inline-block;
+
+	color: #fff;
+}
+
+.footer-info dd {
+	display: inline-block;
+
+	color: #fff;
+}
+
+.footer-items {
+	width: 50%;
+	padding: 0 12px;
+
+	text-align: center;
+}
+
+.footer-items li {
+	display: inline-block;
+
+	margin-right: 30px;
+	margin-bottom: 8px;
+}
+
+.footer-items li:last-child {
+	margin-right: 0;
+}
+
+.footer-items li a {
+	text-decoration: none;
+
+	color: #fff;
+}
+
+.footer-items li a:hover {
+	opacity: .6;
+}
+
+.footer-sns {
+	width: 20%;
+
+	text-align: right;
+}
+
+.footer-sns li {
+	display: inline-block;
+
+	margin-right: 16px;
+}
+
+.footer-sns li:last-child {
+	margin-right: 0;
+}
+
+.footer-sns li a {
+	text-decoration: none;
+
+	color: #fff;
+}
+
+.footer-sns li a:hover {
+	opacity: .6;
+}
+
+
+.copy {
+	font-size: 14px;
+
+	text-align: center;
+
+	color: #fff;
+}
+
+.copy a {
+	font-size: 14px;
+
+	text-decoration: none;
+
+	color: #fff;
+}
+
+.copy a:hover {
+	opacity: .6;
+}
+
+#totop {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+#totop a img {
+	width: 60px;
+}
+
+#totop a:hover {
+	opacity: .6;
+}
