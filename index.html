@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-   
+
     <title>Document</title>
 </head>
 
@@ -34,9 +35,11 @@
                         <h2>一番伝えたいことを書く</h2>
                         <p>リードリードリード</p>
                         <div class="button top-button"> <a href="#">お問い合わせ</a></div>
-                    </div>
+                    </div><!-- contents_wrapper -->
                 </div>
+                <!--inner  -->
             </div>
+            <!--contents_transparent -->
         </section>
 
         <section class="cards">
@@ -46,32 +49,32 @@
                 </div>
                 <div class="card_box">
                     <div class="card">
-                        <img src="image/card-img.png">
+                        <img src="image/card-img.png" alt="">
                         <h3>タイトルタイトル</h3>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                     <div class="card">
-                        <img src="image/card-img.png">
+                        <img src="image/card-img.png" alt="">
                         <h3>タイトルタイトル</h3>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                     <div class="card">
-                        <img src="image/card-img.png">
+                        <img src="image/card-img.png" alt="">
                         <h3>タイトルタイトル</h3>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                     <div class="card">
-                        <img src="image/card-img.png">
+                        <img src="image/card-img.png" alt="">
                         <h3>タイトルタイトル</h3>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                     <div class="card">
-                        <img src="image/card-img.png">
+                        <img src="image/card-img.png" alt="">
                         <h3>タイトルタイトル</h3>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
                     <div class="card">
-                        <img src="image/card-img.png">
+                        <img src="image/card-img.png" alt="">
                         <h3>タイトルタイトル</h3>
                         <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                     </div>
@@ -103,7 +106,7 @@
                         </li>
                         <li>
                             <p class="date"><time datetime="2019-01-30">2019-01-30</time></p>
-                            <p class="label label1"><a href="#">ラベル1</a></p>
+                            <div class="label label1"><a href="#">ラベル1</a></div>
                             <p class="txt"><a href="#"> ニュースニュースニュースニュースニュースニュースニュースニュースニュース</a></p>
                         </li>
                         <li>
@@ -162,6 +165,7 @@
                         <p class="price-coment">※ 目安なので詳しくは<a href="#">お問い合わせ</a>ください。</p>
                     </div>
                 </div>
+                </div>
         </section>
         <section class="access">
             <div class="inner">
@@ -171,7 +175,7 @@
                 <div class="access-wrap">
                     <div class="access-map"><iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.827853402472!2d139.7649307506265!3d35.68124053748203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1568582181159!5m2!1sja!2sjp"
-                            width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            width="800" height="400" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                     <div class="access-txt">
                         <dl>
@@ -187,52 +191,131 @@
                     <div class="button map-button"><a href="#">Googleマップで見る</a></div>
                 </div>
 
-            </div><!-- .inner -->
+            </div><!-- inner -->
         </section>
+
         <section class="contact">
+            <!-- inner -->
             <div class="inner">
+                <!-- title contact-title　-->
                 <div class="title contact-title">
                     <h2>Contact</h2>
-                </div>
+                </div> <!-- title contact-title　-->
 
-                <form method="post" action="#"class="contact-form">
-                        <div class="form-group">
-                            <div class="form-label"> <label>お名前<span class="contact-span">必須</span></label></div>
-                            <div class="form-input">
-                                <input type="text" class="form-txt" placeholder="山田太郎">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                                        <div class="form-label"> <label>メールアドレス<span class="contact-span">必須</span></label></div>
-                                        <div class="form-input">
-                                            <input type="email" class="form-txt" placeholder="山田太郎">
-                                        </div>
-                                    </div>
-                        <div class="form-group">
-                                <div class="form-label"> <label>お問い合わせ種別<span class="contact-span">必須</span></label></div>
-                            <div class="form-input">
-                                <select required>
-                                    <option value=""hidden>ーーー</option>
-                                    <option value="お問い合わせ">お問い合わせ１</option>
-                                    <option value="お問い合わせ">お問い合わせ２</option>
-                                    <option value="ご意見・その他">ご意見・その他</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                                <div class="form-label"> <label>お問い合わせ<span class="contact-span">必須</span></label></div>
-                                <div class="form-input">
-                                        <textarea  class="message"name="message"　cols="50" rows="10" placeholder="お問い合わせを入力してください"></textarea>
-                            </div>
+                <form method="post" action="#" class="contact-form">
+                    <!-- form-group　-->
+                    <div class="form-group">
+                        <div class="form-label">
+                            <p><label for="name"><span>お名前</span><span class="contact-span">必須</span></label></p>
                         </div>
                         <div class="form-input">
-                            <div>
-                                    <div class="button form-button"><a href="#">送信する</a></div>
-                            </div>
+                            <input id="name" type="text" class="form-txt" placeholder="山田太郎">
                         </div>
-                    </form>
-            </div><!-- .inner -->
+                    </div><!-- form-group　-->
+                    <!-- form-group　-->
+                    <div class="form-group">
+                        <!-- form-label　-->
+                        <div class="form-label">
+                            <p><label for="mail"><span>メールアドレス</span><span class="contact-span">必須</span></label></p>
+                        </div><!-- form-label　-->
+                        <!-- form-input　-->
+                        <div class="form-input">
+                            <input id="mail" type="email" class="form-txt" placeholder="山田太郎">
+                        </div> <!-- form-input　-->
+                    </div><!-- form-group　-->
+                    <!-- form-group　-->
+                    <div class="form-group">
+                        <div class="form-label">
+                            <p><label for="contact-select">お問い合わせ種別</label></p>
+                        </div>
+                        <div class="form-input">
+                            <select id="contact-select" required>
+                                <option value="" hidden>ーーー</option>
+                                <option value="お問い合わせ">お問い合わせ１</option>
+                                <option value="お問い合わせ">お問い合わせ２</option>
+                                <option value="ご意見・その他">ご意見・その他</option>
+                            </select>
+                        </div>
+                    </div><!-- form-group　-->
+                    <!-- form-group　-->
+                    <div class="form-group">
+                        <div class="form-label">
+                            <p><label for="contact-txt">お問い合わせ</label></p>
+                        </div>
+                        <div class="form-input">
+                            <textarea id="contact-txt" class="message" name="message" rows="10"
+                                placeholder="お問い合わせを入力してください"></textarea>
+                        </div><!-- form-input　-->
+                    </div><!-- form-group　-->
+                    <!-- form-group radio　-->
+                    <div class="form-group radio">
+                        <label><input type="radio" name="my-radio" checked><span>ラジオ1</span></label>
+                        <label><input type="radio" name="my-radio"><span>ラジオ2</span></label>
+                        <label><input type="radio" name="my-radio"><span>ラジオ3</span></label>
+                    </div><!-- form-group radio　-->
+                    <!-- form-group checkbox　-->
+                    <div class="form-group checkbox ">
+                        <p><label><input type="checkbox" name="my-checkbox" checked><span><a
+                                        href="#">プライバシーポリシー</a>に合意する</span></label>
+                        </p>
+                    </div><!-- form-group checkbox　-->
+                    <div class="button form-button"><a href="#">送信する</a></div>
+                </form>
+            </div><!-- inner -->
         </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="inner">
+
+                <!-- footer-menu -->
+                <div class="footer-menu">
+
+                    <!-- footer-logo -->
+                    <div class="footer-logo">
+                        <div class="footer-logo-img"><a href=""><img
+                                    src="https://haniwaman.com/wp-content/uploads/2019/02/logo.png"
+                                    alt="The Company"></a></div><!-- /footer-logo-img -->
+                        <dl class="footer-info">
+                            <dt>住所：</dt>
+                            <dd>ほげほげのほげほげ</dd>
+                        </dl><!-- /footer-info -->
+                        <dl class="footer-info">
+                            <dt>TEL：</dt>
+                            <dd>0000-00-0000</dd>
+                        </dl><!-- /footer-info -->
+                    </div><!-- /footer-logo -->
+
+                    <!-- footer-items -->
+                    <div class="footer-items">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Card</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Price</a></li>
+                                <li><a href="#">Access</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- /footer-items -->
+                    <!-- footer-sns -->
+                    <div class="footer-sns">
+                        <nav>
+                            <ul>
+                                <li><a href="" rel="noopener" target="_blank"><img src="image/twitter.png" alt=""></a>
+                                </li>
+                                <li><a href="" rel="noopener" target="_blank"><img src="image/facebook.png" alt=""></a>
+                                </li>
+                                <li><a href="" rel="noopener" target="_blank"><img src="image/instagram.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- /footer-sns -->
+                </div><!-- /footer-menu -->
+                <p class="copy">Copyright &copy; 2018 @haniwa008 All rights reserved.</p><!-- /copy -->
+            </div><!-- /inner -->
+            <div id="totop"><a href="#"><img src="image/totop@2x.png" alt=""></a></div>
+        </footer><!-- /footer -->
     </main>
 </body>
 
