@@ -1,0 +1,788 @@
+
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font: 16px/1.6  YuGothic, "游ゴシック Medium", "游ゴシック体";
+
+	margin: 0;
+
+	color: #313131;
+}
+
+header {
+	position: fixed;
+	z-index: 30;
+
+	width: 100%;
+
+	background-color: #3f51b5;
+}
+
+/*------------------------------*/
+/*▼.button共通部分 */
+/*------------------------------*/
+
+.button a {
+	font-weight: bold;
+
+	display: block;
+
+	text-align: center;
+	text-decoration: none;
+
+	color: #fff;
+	border: 1px solid #3f51b5;
+	-webkit-border-radius: 12px;
+	   -moz-border-radius: 12px;
+	        border-radius: 12px;
+	background: #3f51b5;
+	box-shadow: 0 3px 6px rgba(255,255,255,.5);
+}
+.button a:link, .button a:valid, .button a:hover, .button a:active {
+	color: #fff;
+}
+
+.button a:hover {
+	color: #3f51b5;
+	border: 1px solid #3f51b5;
+	background-color: rgba(255,255,255,.5);
+	box-shadow: 0 3px 6px rgba(255,255,255,.5);
+}
+
+/*------------------------------*/
+/*▼nav */
+/*------------------------------*/
+
+nav li.nav_logo {
+	margin-right: auto;
+	padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+	/* 768pxまでの幅の場合に適応される */
+	nav li.nav_logo img {
+		width: 100%;
+	}
+}
+
+
+nav {
+	width: 80%;
+	margin: 0 auto;
+
+	color: white;
+}
+nav ul {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	flex-flow: row;
+	justify-content: space-around;
+
+	margin: 0;
+	padding: 6px;
+
+	list-style-type: none;
+}
+
+
+nav li {
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+@media screen and (max-width: 768px) {
+	/* 768pxまでの幅の場合に適応される */
+	nav li {
+		font-size: .25vw;
+
+		box-sizing: border-box;
+	}
+}
+
+
+
+nav a:not(.nav_logo) {
+	position: relative;
+
+	display: inline-block;
+
+	text-decoration: none;
+
+	color: white;
+}
+@media screen and (max-width: 480px) {
+	/* 480pxまでの幅の場合に適応される */
+	nav a:not(.nav_logo) {
+		display: none;
+	}
+}
+nav a:not(.nav_logo)::after {
+	position: absolute;
+	bottom: 2px;
+	left: 0;
+
+	visibility: hidden;
+
+	width: 100%;
+	height: 1px;
+
+	content: "";
+	transition: .3s;
+
+	opacity: 0;
+	background: #e81919;
+}
+nav a:not(.nav_logo):hover::after {
+	bottom: -1px;
+
+	visibility: visible;
+
+	opacity: 1;
+}
+
+
+.inner {
+	width: 80%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+/*------------------------------*/
+/*▼contents */
+/*------------------------------*/
+
+.contents {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	padding-top: 90px;
+
+	background-image: url("/image/mv-1200x801.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
+
+
+
+.contents_transparent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	padding: 90px 0 ;
+
+	background-color: rgba(255,255,255,.5);
+}
+
+
+.contents h2 {
+	font-size: 68px;
+	font-weight: bold;
+
+	text-align: center;
+}
+
+.contents p {
+	font-size: 38px;
+	font-weight: bold;
+
+	text-align: center;
+}
+
+/*------------------------------*/
+/*▼.top-button */
+/*------------------------------*/
+
+.top-button {
+	line-height: 80px;
+
+	width: 390px;
+	margin: 100px auto;
+}
+
+.top-button a {
+	font-size: 38px;
+
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.cards {
+	background: #efefef;
+}
+
+.card_box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	padding-bottom: 137px;
+}
+
+.card {
+	box-sizing: border-box;
+	width: calc(33.33333333% - 30px);
+	margin: 0 10px 30px 0;
+	padding: 20px 20px 22px 20px;
+
+	transition: all .3s ease 0s;
+	text-decoration: none;
+
+	color: #6f7579;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+	/* 768pxまでの幅の場合に適応される */
+	.card {
+		width: calc(100% / 2 - 10px);
+	}
+}
+@media screen and (max-width: 480px) {
+	/* 480pxまでの幅の場合に適応される */
+	.card {
+		width: 100%;
+	}
+}
+
+/*------------------------------*/
+/*▼.card_index */
+/*------------------------------*/
+
+.card img {
+	width: 100%;
+	height: auto;
+}
+
+.title {
+	position: relative;
+
+	padding: 70px 0 140px 0 ;
+}
+.title h2 {
+	font-size: 60px;
+	font-weight: bold;
+
+	text-align: center;
+
+	color: #333;
+}
+.title h2::after {
+	position: absolute;
+	bottom: 100px; /*下線の上下位置調整*/
+	left: 50%;
+
+	display: block;
+
+	width: 50px; /*下線の幅*/
+	height: 5px; /*下線の太さ*/
+
+	content: "";
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translate(-50%); /*位置調整*/
+
+	background-color: #3f51b5; /*下線の色*/
+}
+
+
+.cards h3 {
+	font-size: 20px;
+
+	padding: 20px 0;
+
+	color: #6f7579;
+}
+/*------------------------------*/
+/*▼.news_index */
+/*------------------------------*/
+.news {
+	margin-bottom: 50px;
+}
+.topics-list {
+	line-height: 1.7;
+
+	padding-left: 0;
+
+	list-style: none;
+}
+.txt a:link, .txt a:visited {
+	color: #343434;
+}
+.txt a:hover {
+	text-decoration: none;
+}
+.topics-list > li a:hover .date time {
+	text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+	.topics-list > li {
+		display: block;
+
+		padding-top: 22.5px;
+		padding-bottom: 21.5px;
+
+		border-bottom: 1px solid #dedede;
+	}
+
+	.date {
+		display: inline-block;
+
+		width: 100px;
+		margin-right: 1em;
+		margin-right: 0;
+		padding-right: 0;
+	}
+
+	.txt {
+		margin-top: 10px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.topics-list > li {
+		display: block;
+
+		padding-top: 22.5px;
+		padding-bottom: 21.5px;
+
+		border-bottom: 1px solid #dedede;
+	}
+	.date {
+		font-size: 13px;
+
+		width: 130px;
+		margin-right: 0;
+		padding-right: 0;
+	}
+
+	.txt {
+		width: auto;
+		margin-top: 10px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.topics-list > li {
+		padding-top: 22.5px;
+		padding-bottom: 21.5px;
+
+		border-bottom: 1px solid #dedede;
+	}
+	.topics-list > li {
+		display: flex;
+	}
+	.date {
+		width: 150px;
+
+		white-space: nowrap;
+	}
+
+	.txt {
+		width: 100%;
+		margin-top: 0;
+	}
+	.label {
+		margin-right: 30px;
+	}
+}
+
+
+.label {
+	font-weight: bold;
+
+	display: inline-block;
+
+	width: 100px;
+	min-width: 100px;
+	height: 30px;
+	min-height: 30px;
+	padding-top: 4.42px;
+
+	text-align: center;
+
+	color: #fff;
+	border-radius: 6px;
+}
+
+.label1 {
+	background-color: #666;
+}
+.label2 {
+	background-color: #3f51b5;
+}
+.label3 {
+	background-color: #e81919;
+}
+
+/*------------------------------*/
+/*▼_more.news_index */
+/*------------------------------*/
+.topics {
+	position: relative;
+}
+
+.topics a {
+	text-decoration: none;
+
+	color: #fff;
+}
+.label a:link, .label a:visited, .label a:hover, .label a:active {
+	color: #fff;
+}
+
+
+.more {
+	display: block;
+
+	width: 50.5px;
+	height: 21px;
+	margin: 16px auto;
+}
+.more a {
+	color: #e81919;
+}
+
+.more a:after {
+	display: inline-block;
+
+	width: 6px;
+	height: 10px;
+	margin: 0 0 0 6.5px;
+
+	content: "";
+	vertical-align: middle;
+
+	background: url("/image/news-arrow@2x.png") no-repeat;
+	background-size: contain;
+}
+
+/*------------------------------*/
+/*▼.price_index */
+/*------------------------------*/
+
+.price {
+	padding-bottom: 100px;
+
+	background-color: #efefef;
+}
+
+.price-wrap {
+	display: flex;
+	justify-content: space-around;
+
+	min-height: 300px;
+}
+
+.price-img img {
+	width: 360px;
+	height: auto;
+}
+
+.price-table {
+	margin-left: 122px;
+}
+
+@media screen and (max-width: 1023px) {
+	.price-wrap {
+		flex-direction: column;
+	}
+	.price-img img {
+		width: 100%;
+		height: auto;
+	}
+
+	.price-table {
+		margin-left: 0;
+	}
+}
+
+
+
+
+
+
+table, th, td {
+	border-collapse: collapse;
+
+	border: 1px solid #707070;
+}
+
+table th {
+	font-weight: bold;
+
+	width: 150px;
+	padding: 13px 60px;
+
+	vertical-align: center;
+
+	color: #fff;
+	background: #999;
+}
+
+@media screen and (max-width: 768px) {
+	table th {
+		padding: 0;
+	}
+}
+table td {
+	width: 350px;
+	padding: 10px;
+
+	text-align: right;
+	vertical-align: center;
+}
+
+.table-row3-span {
+	color: #e81919;
+}
+
+.price-coment a:link, .price-coment a:visited, .price-coment a:hover, .price-coment a:active {
+	color: #333;
+}
+
+/*------------------------------*/
+/*▼.Accese_index */
+/*------------------------------*/
+
+
+.access-wrap {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.access-map {
+	width: 800px;
+	height: 400px;
+	padding-bottom: 40px;
+}
+@media screen and (max-width: 1023px) {
+	.access-map {
+		width: 100%;
+		padding-bottom: 40px;
+	}
+
+	.access-map iframe {
+		width: 100%;
+		height: 400px;
+	}
+}
+
+
+
+.access-txt dl {
+	display: flex;
+	display: block;
+
+	width: 800px;
+	margin-left: 120px;
+}
+@media screen and (max-width: 1023px) {
+	.access-txt dl {
+		display: flex;
+		display: block;
+
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+.access-txt dt {
+	display: inline-block;
+
+	width: 64px;
+}
+.access-txt dd {
+	display: inline-block;
+
+	margin-left: 54px;
+}
+
+
+.map-button {
+	margin-top: 38px;
+	margin-bottom: 88px;
+}
+
+
+.map-button a {
+	font-size: 20px;
+	line-height: 56px;
+
+	box-sizing: border-box;
+	width: 305px;
+	height: 56px;
+}
+
+.map-button a:after {
+	display: inline-block;
+
+	width: 10px;
+	height: 16px;
+	margin: 0 0 0 3.25vw;
+
+	content: "";
+	vertical-align: middle;
+
+	background: url("/image/contact-arrow@2x.png") no-repeat;
+	background-size: contain;
+}
+
+.contact {
+	padding-bottom: 100px;
+
+	background-color: #efefef;
+}
+.contact-form {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	padding: 76px 0px 60px 0px;
+
+	background-color: #fff;
+}
+.form-group {
+	display: flex;
+
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.form-group {
+		flex-direction: column;
+	}
+}
+
+
+.form-label {
+	min-width: 144px;
+	padding-left: 52px;
+}
+.form-label label {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.contact-span {
+	font-size: 14px;
+
+	display: block;
+
+	width: 46px;
+	height: 23px;
+
+	text-align: center;
+
+	color: #fff;
+	border-radius: 12px;
+	background-color: #e81919;
+}
+
+.form-input {
+	font-size: 16px;
+
+	width: 100%;
+	margin-left: 33px;
+	padding-right: 43px;
+}
+
+@media screen and (max-width: 768px) {
+	.form-input {
+		margin: 0;
+	}
+}
+.form-txt {
+	width: 100%;
+	height: 60px;
+
+	color: #ccc;
+}
+@media screen and (max-width: 768px) {
+	.form-input {
+		margin: 0;
+	}
+}
+
+.form-txt {
+	width: 100%;
+	height: 60px;
+}
+::placeholder {
+	font-size: 16px;
+
+	color: #ccc;
+}
+input::placeholder {
+	box-sizing: border-box;
+	padding: 20px auto 20px  16px;
+}
+
+
+
+.message {
+	width: 100%;
+	height: 240px;
+
+	resize: none;
+}
+
+select {
+	font-size: 16px;
+
+	width: 100%;
+	height: 60px;
+
+	color: #ccc;
+	background-image: url(/image/select-arrow@2x.png);
+	background-repeat: no-repeat;
+	background-position: right 20px center;
+	background-size: 20px 14px;
+
+	-webkit-appearance: none;/* ベンダープレフィックス(Google Chrome、Safari用) */
+	   -moz-appearance: none; /* ベンダープレフィックス(Firefox用) */
+	        appearance: none; /* 標準のスタイルを無効にする */
+}
+::-ms-expand {
+	/* select要素のデザインを無効にする（IE用） */
+	display: none;
+}
+
+
+.form-button a {
+	font-size: 20px;
+	line-height: 56px;
+
+	box-sizing: border-box;
+	width: 261px;
+	height: 56px;
+	margin: 0 auto;
+}
+
+.form-button a:after {
+	display: inline-block;
+
+	width: 14px;
+	height: 16px;
+
+	content: "";
+	vertical-align: middle;
+
+	background: url("/image/contact-arrow@2x.png") no-repeat;
+	background-size: contain;;
+}
